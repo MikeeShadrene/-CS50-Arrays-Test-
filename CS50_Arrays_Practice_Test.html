@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS50 Week 2 - Arrays Practice Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            margin: 20px;
+        }
+        .container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: auto;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 5px;
+            color: #c7254e;
+            font-family: Consolas, 'Courier New', monospace;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .label-input {
+            margin-left: 15px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+        .save-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .save-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function saveAsPDF() {
+            window.print();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>CS50 Week 2 - Arrays Practice Test</h1>
+        <p><strong>Name:</strong> <input type="text"></p>
+        <p><strong>Date:</strong> <input type="text"></p>
+        <hr>
+
+        <div class="question">
+            <h2>Question 1: Multiple Choice</h2>
+            <p>Which of the following correctly declares an array of integers in C?</p>
+            <p><label><input type="radio" name="q1"> A. <code>int array[5];</code></label></p>
+            <p><label><input type="radio" name="q1"> B. <code>array int[5];</code></label></p>
+            <p><label><input type="radio" name="q1"> C. <code>int[] array;</code></label></p>
+            <p><label><input type="radio" name="q1"> D. <code>array = new int[5];</code></label></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 2: Labeling Code</h2>
+            <p>Label the different parts of the following code snippet:</p>
+            <pre><code>int numbers[3] = {10, 20, 30};</code></pre>
+            <p>1. <code>int</code> - <input type="text" class="label-input"></p>
+            <p>2. <code>numbers</code> - <input type="text" class="label-input"></p>
+            <p>3. <code>[3]</code> - <input type="text" class="label-input"></p>
+            <p>4. <code>{10, 20, 30}</code> - <input type="text" class="label-input"></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 3: Fill in the Blanks</h2>
+            <p>Fill in the blanks to complete the array initialization:</p>
+            <pre><code>________ scores[5] = {90, 85, 88, 92, ________};</code></pre>
+            <p>1. Data type: <input type="text" class="label-input"></p>
+            <p>2. Last element: <input type="text" class="label-input"></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 4: Multiple Choice</h2>
+            <p>What is the index of the last element in an array of size 10?</p>
+            <p><label><input type="radio" name="q4"> A. 10</label></p>
+            <p><label><input type="radio" name="q4"> B. 9</label></p>
+            <p><label><input type="radio" name="q4"> C. 11</label></p>
+            <p><label><input type="radio" name="q4"> D. 8</label></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 5: Short Answer</h2>
+            <p>What is an array in C? Describe it briefly.</p>
+            <textarea rows="3"></textarea>
+        </div>
+
+        <div class="question">
+            <h2>Question 6: Code Analysis</h2>
+            <p>What is the output of the following code?</p>
+            <pre><code>int nums[4] = {1, 2, 3, 4};
+printf("%d", nums[2]);</code></pre>
+            <p>Output: <input type="text" class="label-input"></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 7: True or False</h2>
+            <p>You can change the size of an array after it is declared in C.</p>
+            <p><label><input type="radio" name="q7"> A. True</label></p>
+            <p><label><input type="radio" name="q7"> B. False</label></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 8: Multiple Choice</h2>
+            <p>How would you access the first element of an array named <code>grades</code>?</p>
+            <p><label><input type="radio" name="q8"> A. <code>grades[0]</code></label></p>
+            <p><label><input type="radio" name="q8"> B. <code>grades[1]</code></label></p>
+            <p><label><input type="radio" name="q8"> C. <code>grades[first]</code></label></p>
+            <p><label><input type="radio" name="q8"> D. <code>grades{-1}</code></label></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 9: Debugging</h2>
+            <p>Find the error in the following code snippet:</p>
+            <pre><code>int values[3];
+values[3] = 10;</code></pre>
+            <p>Error: <input type="text" class="label-input"></p>
+        </div>
+
+        <div class="question">
+            <h2>Question 10: Matching</h2>
+            <p>Match the array term with its correct definition:</p>
+            <ol>
+                <li>Index</li>
+                <li>Element</li>
+                <li>Array</li>
+            </ol>
+            <ul>
+                <li>A. A collection of elements stored in contiguous memory locations.</li>
+                <li>B. The position number used to access an element in the array.</li>
+                <li>C. A single value within the array.</li>
+            </ul>
+        </div>
+
+        <button class="save-button" onclick="saveAsPDF()">Save as PDF</button>
+
+        <hr>
+        <p><strong>Good luck!</strong></p>
+        <p><strong>Reminder:</strong> Once you complete the test, scan or take a photo, and I'll help you grade it!</p>
+    </div>
+</body>
+</html>
